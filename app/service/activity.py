@@ -15,7 +15,7 @@ class TimeRange:
     end: datetime
 
 class ActivityService():
-    def __init__(self, client: SingletonMongo) -> None:
+    def __init__(self, client: SingletonMongo):
         self.client = client()
         self.collection = self.client['coiote']['activity']
 
